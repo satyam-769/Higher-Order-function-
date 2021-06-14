@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+// import Signup from './signup';
+// import RefsInReact from './RefsInReact'
+// import Employee from './Employee'
+// import Widget from './Widget'
+// import ErrorBoundary from './errorBoundary'
 
-function App() {
+// import logo from './logo512.png'
+// import RouterDemo from './RouterDemo'
+import SignupForm from './signupform'
+
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+    <h1>App Component</h1>
+    {/* <RouterDemo/> */}
+    <SignupForm/>
+      {/* <Signup /> */}
+      {/* <RefsInReact/> */}
+    
+      {/* <ErrorBoundary>
+        <Employee/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Widget profileImage=""/>
+      </ErrorBoundary> */}
     </div>
   );
 }
-
+}
 export default App;
